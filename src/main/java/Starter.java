@@ -11,13 +11,13 @@ public class Starter implements Runnable {
     private int threadNumber = 8;
 
     @CommandLine.Parameters(paramLabel = "URL", description = "书籍链接")
-    private String url;
+    private String url = http://fudan.chineseall.cn/v3/book/read/OK7Sg/PDF/1;
 
     @CommandLine.Option(names = {"-p", "--path"}, description = "pdf存储目录")
-    private String outputPath;
+    private String outputPath = D:\99 电子书;
 
     @CommandLine.Option(names = {"-c", "--cache_path"}, description = "临时文件（分页pdf）存储路径")
-    private String tmpPath;
+    private String tmpPath = D:\99 电子书;
 
     public static void main(String[] args) {
         System.setProperty("sun.java2d.cmm", "sun.java2d.cmm.kcms.KcmsServiceProvider");
